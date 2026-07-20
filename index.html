@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SplitBolt">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20180%20180%22%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20rx%3D%2240%22%20fill%3D%22%2312151A%22%2F%3E%3Cg%20transform%3D%22translate%2823.39%2C35.14%29%20scale%280.6531%29%22%3E%3Cpath%20d%3D%22M%20116.8%2C115.6%20L%20111.7%2C121.8%20L%20105.8%2C127.3%20L%2099.3%2C132.0%20L%2092.2%2C135.9%20L%2084.8%2C138.9%20L%2077.0%2C140.9%20L%2069.0%2C141.9%20L%2061.0%2C141.9%20L%2053.0%2C140.9%20L%2045.2%2C138.9%20L%2037.8%2C135.9%20L%2030.7%2C132.0%20L%2024.2%2C127.3%20L%2018.3%2C121.8%20L%2013.2%2C115.6%20L%208.9%2C108.8%20L%205.5%2C101.6%20L%203.0%2C93.9%20L%201.5%2C86.0%20L%201.0%2C78.0%20L%201.5%2C70.0%20L%203.0%2C62.1%20L%205.5%2C54.4%20L%208.9%2C47.2%20L%2013.2%2C40.4%20L%2018.3%2C34.2%20L%2024.2%2C28.7%20L%2030.7%2C24.0%20L%2037.8%2C20.1%20L%2045.2%2C17.1%20L%2053.0%2C15.1%20L%2061.0%2C14.1%20L%2069.0%2C14.1%20L%2077.0%2C15.1%20L%2084.8%2C17.1%20L%2092.2%2C20.1%20L%2099.3%2C24.0%20L%20105.8%2C28.7%20L%20111.7%2C34.2%20L%20116.8%2C40.4%20L%2097.4%2C54.5%20L%2094.2%2C50.6%20L%2090.5%2C47.2%20L%2086.4%2C44.2%20L%2082.0%2C41.8%20L%2077.4%2C40.0%20L%2072.5%2C38.7%20L%2067.5%2C38.1%20L%2062.5%2C38.1%20L%2057.5%2C38.7%20L%2052.6%2C40.0%20L%2048.0%2C41.8%20L%2043.6%2C44.2%20L%2039.5%2C47.2%20L%2035.8%2C50.6%20L%2032.6%2C54.5%20L%2029.9%2C58.7%20L%2027.8%2C63.3%20L%2026.3%2C68.1%20L%2025.3%2C73.0%20L%2025.0%2C78.0%20L%2025.3%2C83.0%20L%2026.3%2C87.9%20L%2027.8%2C92.7%20L%2029.9%2C97.3%20L%2032.6%2C101.5%20L%2035.8%2C105.4%20L%2039.5%2C108.8%20L%2043.6%2C111.8%20L%2048.0%2C114.2%20L%2052.6%2C116.0%20L%2057.5%2C117.3%20L%2062.5%2C117.9%20L%2067.5%2C117.9%20L%2072.5%2C117.3%20L%2077.4%2C116.0%20L%2082.0%2C114.2%20L%2086.4%2C111.8%20L%2090.5%2C108.8%20L%2094.2%2C105.4%20L%2097.4%2C101.5%20Z%22%20fill%3D%22%23E8A94A%22%2F%3E%3Crect%20x%3D%226%22%20y%3D%2265%22%20width%3D%2247%22%20height%3D%2211%22%20fill%3D%22%23E8A94A%22%2F%3E%3Crect%20x%3D%226%22%20y%3D%2290%22%20width%3D%2247%22%20height%3D%2211%22%20fill%3D%22%23E8A94A%22%2F%3E%3Cpolygon%20points%3D%2282%2C-14%2054%2C62%2065%2C62%2040%2C168%2098%2C58%2083%2C58%22%20fill%3D%22%2312151A%22%20stroke%3D%22%2312151A%22%20stroke-width%3D%225%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpolygon%20points%3D%2282%2C-14%2054%2C62%2065%2C62%2040%2C168%2098%2C58%2083%2C58%22%20fill%3D%22%23E8A94A%22%2F%3E%3Cline%20x1%3D%22152%22%20y1%3D%2282%22%20x2%3D%22182%22%20y2%3D%2252%22%20stroke%3D%22%23E8A94A%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22%2F%3E%3Cline%20x1%3D%22152%22%20y1%3D%2282%22%20x2%3D%22182%22%20y2%3D%22112%22%20stroke%3D%22%23E8A94A%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%22152%22%20cy%3D%2282%22%20r%3D%2211%22%20fill%3D%22%23E8A94A%22%2F%3E%3Ccircle%20cx%3D%22182%22%20cy%3D%2252%22%20r%3D%2214%22%20fill%3D%22%23E8A94A%22%2F%3E%3Ccircle%20cx%3D%22182%22%20cy%3D%22112%22%20r%3D%2211%22%20fill%3D%22%23E8A94A%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<title>SplitBolt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#12151A;
+    --surface:#1C212B;
+    --surface-2:#232A36;
+    --border:#2E3542;
+    --text:#EDEAE2;
+    --text-dim:#8A93A3;
+    --accent:#E8A94A;
+    --accent-dim:rgba(232,169,74,.16);
+    --coral:#E8735F;
+    --coral-dim:rgba(232,115,95,.14);
+    --teal:#5FB8A8;
+    --radius:16px;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:'Space Grotesk', -apple-system, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overscroll-behavior-y:none;
+  }
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  .app{
+    max-width:480px; margin:0 auto; min-height:100vh;
+    display:flex; flex-direction:column;
+    padding-top:env(safe-area-inset-top,0);
+    position:relative;
+  }
+  /* TOPBAR */
+  .topbar{padding:20px 20px 14px;}
+  .topbar-row{display:flex; align-items:center; justify-content:space-between; gap:10px;}
+  .topbar-eyebrow{font-size:12px; letter-spacing:.12em; color:var(--text-dim); text-transform:uppercase; margin-bottom:6px;}
+  .topbar-total{font-family:'IBM Plex Mono', monospace; font-size:34px; font-weight:600; letter-spacing:-.02em;}
+  .app-badge{
+    display:inline-flex; align-items:center; gap:7px; background:var(--accent); color:#1A1300;
+    font-weight:700; font-size:14px; padding:8px 14px 8px 10px; border-radius:10px; letter-spacing:.01em;
+  }
+  .app-badge svg{ display:block; }
+  .tagline{font-size:12px; color:var(--text-dim); margin-top:8px; font-style:italic;}
+  .topbar-sub{font-size:13px; color:var(--text-dim); margin-top:6px;}
+
+  /* MAIN */
+  main{flex:1; overflow-y:auto; padding:0 16px 120px;}
+
+  .section-title{font-size:13px; color:var(--text-dim); margin:18px 4px 8px; letter-spacing:.02em;}
+
+  /* EXPENSE LIST */
+  .month-group{margin-bottom:6px;}
+  .month-header{
+    display:flex; align-items:baseline; justify-content:space-between;
+    font-size:12px; color:var(--text-dim); text-transform:capitalize; margin:16px 6px 8px; letter-spacing:.05em;
+  }
+  .month-header .month-total{font-family:'IBM Plex Mono'; font-size:14px; color:var(--text); font-weight:600; text-transform:none; letter-spacing:0;}
+  .expense-row{
+    display:flex; align-items:center; gap:12px;
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:var(--radius); padding:12px 12px; margin-bottom:8px; cursor:pointer;
+  }
+  .expense-icon{font-size:22px; width:38px; height:38px; display:flex; align-items:center; justify-content:center; background:var(--surface-2); border-radius:12px; flex-shrink:0;}
+  .expense-info{flex:1; min-width:0;}
+  .expense-desc{font-size:15px; font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .expense-meta{font-size:12px; color:var(--text-dim); margin-top:2px;}
+  .expense-amount{font-family:'IBM Plex Mono', monospace; font-size:15px; color:var(--coral); flex-shrink:0;}
+  .expense-del{
+    background:var(--coral-dim); border:none; color:var(--coral); font-size:17px;
+    width:36px; height:36px; display:flex; align-items:center; justify-content:center;
+    border-radius:10px; flex-shrink:0; cursor:pointer;
+  }
+  .expense-del.confirm{ background:var(--coral); color:#2A0F0B; font-size:12px; font-family:'Space Grotesk'; width:auto; padding:0 14px; font-weight:700;}
+
+  .empty-state{ text-align:center; padding:60px 20px; color:var(--text-dim); }
+  .empty-state .glyph{font-size:36px; margin-bottom:10px;}
+  .empty-state p{font-size:14px; line-height:1.5; margin:0;}
+
+  /* TABBAR */
+  .tabbar{
+    display:flex; border-top:1px solid var(--border); background:rgba(28,33,43,.9);
+    backdrop-filter:blur(10px); position:sticky; bottom:0;
+    padding-bottom:env(safe-area-inset-bottom,0);
+  }
+  .tab{
+    flex:1; background:none; border:none; color:var(--text-dim);
+    font-family:'Space Grotesk'; font-size:11px; padding:10px 0 8px;
+    display:flex; flex-direction:column; align-items:center; gap:3px; cursor:pointer;
+  }
+  .tab .ic{font-size:19px;}
+  .tab.active{color:var(--accent);}
+
+  .fab{
+    position:fixed; right:calc(50% - 240px + 20px); bottom:calc(74px + env(safe-area-inset-bottom,0));
+    width:56px; height:56px; border-radius:50%; background:var(--accent); color:#1A1300;
+    border:none; font-size:28px; line-height:1; display:flex; align-items:center; justify-content:center;
+    box-shadow:0 8px 20px rgba(232,169,74,.35); cursor:pointer; z-index:20;
+  }
+  @media (max-width:520px){ .fab{ right:20px; } }
+
+  /* SHEET */
+  .sheet-backdrop{
+    position:fixed; inset:0; background:rgba(0,0,0,.5); opacity:0; pointer-events:none;
+    transition:opacity .2s; z-index:30;
+  }
+  .sheet-backdrop.open{opacity:1; pointer-events:auto;}
+  .sheet{
+    position:fixed; left:0; right:0; bottom:0; max-width:480px; margin:0 auto;
+    background:var(--bg); border-top-left-radius:24px; border-top-right-radius:24px;
+    border:1px solid var(--border); border-bottom:none;
+    transform:translateY(100%); transition:transform .28s cubic-bezier(.32,.72,0,1);
+    z-index:31; max-height:90vh; overflow-y:auto;
+    padding:14px 18px calc(24px + env(safe-area-inset-bottom,0));
+  }
+  .sheet.open{transform:translateY(0);}
+  .sheet-handle{width:36px; height:4px; background:var(--border); border-radius:2px; margin:0 auto 14px;}
+  .sheet-header{display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;}
+  .sheet-header h2{font-size:17px; margin:0;}
+  .sheet-close{background:var(--surface); border:none; color:var(--text-dim); width:30px; height:30px; border-radius:50%; font-size:15px; cursor:pointer;}
+
+  .amount-field{display:flex; align-items:baseline; justify-content:center; gap:6px; padding:18px 0 10px;}
+  .amount-field span{font-size:26px; color:var(--text-dim); font-family:'IBM Plex Mono';}
+  .amount-field input{
+    font-family:'IBM Plex Mono', monospace; font-size:42px; font-weight:600; background:none; border:none;
+    color:var(--text); width:180px; text-align:center; outline:none;
+  }
+  .field-label{font-size:12px; color:var(--text-dim); margin:14px 2px 6px;}
+  .text-input{
+    width:100%; background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:12px 14px; color:var(--text); font-family:'Space Grotesk'; font-size:15px; outline:none;
+  }
+  .text-input:focus{border-color:var(--accent);}
+
+  .cat-grid{display:grid; grid-template-columns:repeat(4, 1fr); gap:8px; padding:2px 0 4px;}
+  .cat-chip{
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:10px 4px 8px; font-size:11px; color:var(--text-dim);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; cursor:pointer; text-align:center;
+  }
+  .cat-chip .em{font-size:20px;}
+  .cat-chip.active{background:var(--accent-dim); border-color:var(--accent); color:var(--accent); font-weight:600;}
+
+  .toggle-row{display:flex; align-items:center; justify-content:space-between; padding:16px 2px 6px;}
+  .toggle-row .lbl{font-size:14px; font-weight:500;}
+  .switch{position:relative; display:inline-block; width:46px; height:26px; flex-shrink:0;}
+  .switch input{opacity:0; width:0; height:0; position:absolute;}
+  .switch .track{position:absolute; inset:0; background:var(--surface-2); border:1px solid var(--border); border-radius:999px; transition:.2s; cursor:pointer;}
+  .switch .track::before{content:''; position:absolute; width:20px; height:20px; left:2px; top:2px; background:var(--text-dim); border-radius:50%; transition:.2s;}
+  .switch input:checked + .track{background:var(--accent-dim); border-color:var(--accent);}
+  .switch input:checked + .track::before{transform:translateX(20px); background:var(--accent);}
+
+  .stepper{display:flex; align-items:center; justify-content:center; gap:22px; background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:10px 0; margin:6px 0 14px;}
+  .stepper button{width:36px; height:36px; border-radius:50%; border:1px solid var(--border); background:var(--surface-2); color:var(--text); font-size:19px; cursor:pointer; display:flex; align-items:center; justify-content:center;}
+  .stepper-value{font-size:19px; font-weight:600; min-width:20px; text-align:center;}
+
+  .segmented{display:flex; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; padding:3px; margin:8px 0 12px;}
+  .segmented button{
+    flex:1; background:none; border:none; color:var(--text-dim); font-family:'Space Grotesk'; font-size:13px;
+    padding:8px 0; border-radius:9px; cursor:pointer;
+  }
+  .segmented button.active{background:var(--accent); color:#1A1300; font-weight:600;}
+
+  .split-preview{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:10px 12px; margin-bottom:6px;}
+  .split-row{display:flex; align-items:center; gap:8px; padding:6px 0; font-size:14px;}
+  .split-row + .split-row{border-top:1px solid var(--border);}
+  .split-row .name-input{flex:1; padding:9px 12px; font-size:14px;}
+  .split-row .share-amt{font-family:'IBM Plex Mono'; font-size:14px; color:var(--text-dim); min-width:72px; text-align:right; flex-shrink:0;}
+  .split-row .custom-split-input{
+    width:78px; text-align:right; background:var(--surface-2); border:1px solid var(--border); border-radius:8px;
+    padding:8px 8px; color:var(--text); font-family:'IBM Plex Mono'; font-size:14px; outline:none; flex-shrink:0;
+  }
+  .remaining{font-size:12px; color:var(--text-dim); text-align:right; padding:6px 4px 0;}
+  .remaining.ok{color:var(--teal);}
+  .remaining.bad{color:var(--coral);}
+
+  .clear-all-btn{
+    background:var(--coral-dim); border:1px solid var(--coral); color:var(--coral);
+    font-size:17px; width:38px; height:38px; border-radius:12px; cursor:pointer; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .clear-all-btn.confirm{background:var(--coral); border-color:var(--coral); color:#2A0F0B; font-weight:700; font-size:11px; width:auto; padding:0 14px;}
+
+  input[type="date"]{ color-scheme: dark; }
+
+  .btn-save{
+    width:100%; background:var(--accent); color:#1A1300; border:none; border-radius:14px;
+    padding:15px 0; font-family:'Space Grotesk'; font-size:16px; font-weight:700; margin-top:18px; cursor:pointer;
+  }
+
+  /* RIEPILOGO */
+  .riep-check-row{
+    display:flex; align-items:center; gap:10px; background:var(--surface); border:1px solid var(--border);
+    border-radius:12px; padding:10px 12px; margin-bottom:6px; font-size:14px;
+  }
+  .riep-check-row input{width:18px; height:18px; accent-color:var(--accent); flex-shrink:0;}
+  .riep-check-row .rdesc{flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .riep-check-row .ramt{font-family:'IBM Plex Mono'; font-size:13px; color:var(--text-dim);}
+  .riep-tools{display:flex; gap:8px; margin:8px 0 4px;}
+  .riep-tools button{background:none; border:none; color:var(--accent); font-size:12px; font-family:'Space Grotesk'; cursor:pointer; padding:4px 0;}
+
+  .receipt{
+    position:relative; background:var(--surface); margin:16px 2px 0; padding:22px 20px 14px;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  .receipt::before, .receipt::after{
+    content:''; position:absolute; left:0; right:0; height:11px;
+    background-image:linear-gradient(-45deg, var(--bg) 6px, transparent 0), linear-gradient(45deg, var(--bg) 6px, transparent 0);
+    background-size:12px 12px; background-position:left top; background-repeat:repeat-x;
+  }
+  .receipt::before{top:-1px;}
+  .receipt::after{bottom:-1px; transform:rotate(180deg);}
+  .receipt-textarea{
+    width:100%; display:block; background:none; border:none; outline:none; resize:none;
+    font-family:'IBM Plex Mono', monospace; font-size:13px; line-height:1.65; color:var(--text);
+    min-height:120px; overflow:hidden;
+  }
+
+  .receipt-actions{display:flex; gap:10px; margin:16px 2px 0;}
+  .receipt-actions button{
+    flex:1; padding:13px 0; border-radius:12px; font-family:'Space Grotesk'; font-size:14px; font-weight:600; cursor:pointer;
+  }
+  #btnCopy{background:var(--accent); border:none; color:#1A1300;}
+
+  .toast{
+    position:fixed; left:50%; bottom:calc(90px + env(safe-area-inset-bottom,0)); transform:translate(-50%, 10px);
+    background:var(--surface-2); border:1px solid var(--border); color:var(--text); font-size:13px;
+    padding:10px 16px; border-radius:999px; opacity:0; transition:.2s; z-index:50; pointer-events:none;
+    max-width:80%; text-align:center;
+  }
+  .toast.show{opacity:1; transform:translate(-50%, 0);}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="topbar" id="topbar"></div>
+  <main id="main"></main>
+  <nav class="tabbar">
+    <button class="tab" data-tab="spese" onclick="setTab('spese')"><span class="ic">📋</span>Spese</button>
+    <button class="tab" data-tab="riepilogo" onclick="setTab('riepilogo')"><span class="ic">🧾</span>Riepilogo</button>
+  </nav>
+  <button class="fab" id="fab" onclick="openSheet()">+</button>
+</div>
+
+<div class="sheet-backdrop" id="sheetBackdrop" onclick="closeSheet()"></div>
+<div class="sheet" id="sheet"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const CATS = [
+  {emoji:'🍝', label:'Cibo'},
+  {emoji:'🚕', label:'Trasporti'},
+  {emoji:'🛒', label:'Spesa'},
+  {emoji:'🏠', label:'Casa'},
+  {emoji:'🎉', label:'Svago'},
+  {emoji:'💡', label:'Bollette'},
+  {emoji:'💊', label:'Salute'},
+  {emoji:'✏️', label:'Altro'},
+];
+const STORAGE_KEY = 'spese_expenses_v1';
+
+let expenses = [];
+let tab = 'spese';
+let confirmDeleteId = null;
+let clearAllPending = false;
+let riepSelected = new Set();
+let form = null;
+let editingId = null;
+
+/* ---------- storage ---------- */
+function loadExpenses(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    expenses = raw ? JSON.parse(raw) : [];
+    sortExpenses();
+  }catch(e){ expenses = []; }
+}
+function saveExpenses(){
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(expenses)); }
+  catch(e){ toast('Impossibile salvare i dati sul telefono'); }
+}
+function sortExpenses(){
+  expenses.sort((a,b) => new Date(b.date) - new Date(a.date));
+}
+
+/* ---------- utils ---------- */
+function uid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+function fmt(n){ return (Math.round(n*100)/100).toLocaleString('it-IT', {style:'currency', currency:'EUR'}); }
+function escapeHtml(s){ return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function capitalize(s){ return s.charAt(0).toUpperCase() + s.slice(1); }
+function monthLabel(iso){ return capitalize(new Date(iso).toLocaleDateString('it-IT', {month:'long', year:'numeric'})); }
+function isToday(iso){ const d=new Date(iso), n=new Date(); return d.toDateString()===n.toDateString(); }
+function isYesterday(iso){ const d=new Date(iso), y=new Date(); y.setDate(y.getDate()-1); return d.toDateString()===y.toDateString(); }
+function dayText(iso){
+  if (isToday(iso)) return 'Oggi';
+  if (isYesterday(iso)) return 'Ieri';
+  return new Date(iso).toLocaleDateString('it-IT', {day:'numeric', month:'short'});
+}
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toast._t);
+  toast._t = setTimeout(()=>t.classList.remove('show'), 2200);
+}
+
+/* ---------- render root ---------- */
+function render(){
+  renderTopbar();
+  renderMain();
+  document.querySelectorAll('.tab').forEach(b => b.classList.toggle('active', b.dataset.tab===tab));
+  document.getElementById('fab').style.display = tab==='spese' ? 'flex' : 'none';
+}
+function setTab(t){ tab = t; render(); }
+
+function currentMonthTotal(){
+  const now = new Date();
+  return expenses.filter(e=>{ const d=new Date(e.date); return d.getMonth()===now.getMonth() && d.getFullYear()===now.getFullYear(); })
+    .reduce((s,e)=>s+e.amount,0);
+}
+
+const LOGO_SVG = '<svg width="18" height="19" viewBox="0 0 32 34" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="bc2"><polygon points="15,2 5,16 13,16 10,25 23,12 15,12"/></clipPath></defs><polygon points="15,2 5,16 13,16 10,25 23,12 15,12" fill="#1A1300"/><g clip-path="url(#bc2)"><text x="14" y="15" font-family="Georgia,serif" font-size="7" font-weight="700" fill="#E8A94A" text-anchor="middle">€</text></g><line x1="10" y1="25" x2="5" y2="31" stroke="#1A1300" stroke-width="1.6" stroke-linecap="round"/><line x1="10" y1="25" x2="16" y2="31" stroke="#1A1300" stroke-width="1.6" stroke-linecap="round"/><circle cx="10" cy="25" r="1.8" fill="#1A1300"/><circle cx="5" cy="31" r="1.8" fill="#1A1300"/><circle cx="16" cy="31" r="1.8" fill="#1A1300"/></svg>';
+
+function renderTopbar(){
+  const el = document.getElementById('topbar');
+  if (tab==='spese'){
+    el.innerHTML = `
+      <div class="topbar-row">
+        <div class="app-badge">${LOGO_SVG}SplitBolt</div>
+        ${expenses.length>0 ? `<button class="clear-all-btn ${clearAllPending?'confirm':''}" onclick="${clearAllPending?'clearAllExpenses()':'askClearAll()'}">${clearAllPending?'Conferma?':'🗑'}</button>` : ''}
+      </div>
+      <div class="tagline">Log it fast. Split it faster.</div>
+      <div class="topbar-sub">${expenses.length} spes${expenses.length===1?'a':'e'} registrat${expenses.length===1?'a':'e'}</div>`;
+  } else {
+    el.innerHTML = `
+      <div class="topbar-eyebrow">Riepilogo</div>
+      <div class="topbar-total mono" style="font-size:22px;">Crea una nota da condividere</div>
+      <div class="topbar-sub">Scegli le spese condivise da includere</div>`;
+  }
+}
+
+function renderMain(){
+  const el = document.getElementById('main');
+  el.innerHTML = tab==='spese' ? speseListHTML() : riepilogoHTML();
+  const ta = document.getElementById('noteText');
+  if (ta) autoGrow(ta);
+}
+
+/* ---------- SPESE TAB ---------- */
+function speseListHTML(){
+  if (expenses.length===0){
+    return `<div class="empty-state"><div class="glyph">🧾</div><p>Nessuna spesa ancora.<br>Tocca + per aggiungere la prima.</p></div>`;
+  }
+  const groups = [];
+  let lastMonth = null, group = null;
+  expenses.forEach(e=>{
+    const m = monthLabel(e.date);
+    if (m !== lastMonth){ group = {month:m, items:[]}; groups.push(group); lastMonth = m; }
+    group.items.push(e);
+  });
+  return groups.map(g => {
+    const groupTotal = g.items.reduce((s,e)=>s+e.amount,0);
+    return `
+    <div class="month-group">
+      <div class="month-header"><span>${g.month}</span><span class="month-total mono">${fmt(groupTotal)}</span></div>
+      ${g.items.map(rowHTML).join('')}
+    </div>`;
+  }).join('');
+}
+
+function rowHTML(e){
+  const del = confirmDeleteId===e.id
+    ? `<button class="expense-del confirm" onclick="event.stopPropagation(); deleteExpense('${e.id}')">Elimina</button>`
+    : `<button class="expense-del" onclick="event.stopPropagation(); askDelete('${e.id}')">🗑</button>`;
+  return `
+    <div class="expense-row" onclick="openSheet('${e.id}')">
+      <div class="expense-icon">${e.category.emoji}</div>
+      <div class="expense-info">
+        <div class="expense-desc">${escapeHtml(e.description || e.category.label)}</div>
+        <div class="expense-meta">${dayText(e.date)}${e.shared ? ' · 👥 '+e.participants.length : ''}</div>
+      </div>
+      <div class="expense-amount mono">-${fmt(e.amount)}</div>
+      ${del}
+    </div>`;
+}
+function askDelete(id){
+  confirmDeleteId = id;
+  render();
+  setTimeout(()=>{ if (confirmDeleteId===id){ confirmDeleteId=null; render(); } }, 3000);
+}
+function deleteExpense(id){
+  expenses = expenses.filter(e=>e.id!==id);
+  riepSelected.delete(id);
+  confirmDeleteId = null;
+  saveExpenses();
+  render();
+  toast('Spesa eliminata');
+}
+function askClearAll(){
+  clearAllPending = true;
+  render();
+  setTimeout(()=>{ if (clearAllPending){ clearAllPending=false; render(); } }, 3000);
+}
+function clearAllExpenses(){
+  expenses = [];
+  riepSelected = new Set();
+  clearAllPending = false;
+  saveExpenses();
+  render();
+  toast('Tutte le spese sono state cancellate');
+}
+
+/* ---------- ADD EXPENSE SHEET ---------- */
+function openSheet(id){
+  editingId = id || null;
+  const existing = editingId ? expenses.find(x=>x.id===editingId) : null;
+  if (editingId && !existing) editingId = null;
+  confirmDeleteId = null;
+
+  if (existing){
+    const catIdx = Math.max(0, CATS.findIndex(c=>c.label===existing.category.label));
+    const customAmounts = {};
+    existing.participants.forEach((p,i)=>{ customAmounts[i] = String(p.amount).replace('.', ','); });
+    form = {
+      catIndex: catIdx,
+      shared: existing.shared,
+      splitType: existing.shared ? 'custom' : 'equal',
+      count: existing.shared ? existing.participants.length : 2,
+      names: existing.shared ? existing.participants.map(p=>p.name) : ['',''],
+      customAmounts: existing.shared ? customAmounts : {}
+    };
+  } else {
+    form = { catIndex:0, shared:false, splitType:'equal', count:2, names:['',''], customAmounts:{} };
+  }
+
+  document.getElementById('sheet').innerHTML = sheetShellHTML();
+  renderSheetDynamic();
+
+  if (existing){
+    document.getElementById('inpAmount').value = existing.amount.toFixed(2).replace('.', ',');
+    document.getElementById('inpDesc').value = existing.description || '';
+    document.getElementById('inpDate').value = existing.date.slice(0,10);
+  } else {
+    document.getElementById('inpDate').value = new Date().toISOString().slice(0,10);
+  }
+
+  document.getElementById('sheetBackdrop').classList.add('open');
+  document.getElementById('sheet').classList.add('open');
+  setTimeout(()=>document.getElementById('inpAmount')?.focus(), 250);
+}
+function closeSheet(){
+  document.getElementById('sheetBackdrop').classList.remove('open');
+  document.getElementById('sheet').classList.remove('open');
+  editingId = null;
+}
+function sheetShellHTML(){
+  return `
+    <div class="sheet-handle"></div>
+    <div class="sheet-header">
+      <h2>${editingId ? 'Modifica spesa' : 'Nuova spesa'}</h2>
+      <button class="sheet-close" onclick="closeSheet()">✕</button>
+    </div>
+    <div class="amount-field">
+      <span>€</span>
+      <input id="inpAmount" type="text" inputmode="decimal" placeholder="0,00" oninput="onAmountInput()">
+    </div>
+    <input id="inpDesc" class="text-input" type="text" placeholder="Descrizione (opzionale)">
+    <div class="field-label">Data</div>
+    <input id="inpDate" class="text-input" type="date">
+    <div class="field-label">Categoria</div>
+    <div class="cat-grid" id="catRow"></div>
+    <div class="toggle-row">
+      <span class="lbl">Dividi in quote</span>
+      <label class="switch">
+        <input type="checkbox" id="sharedToggle" onchange="toggleShared()">
+        <span class="track"></span>
+      </label>
+    </div>
+    <div id="sharedSection"></div>
+    <button class="btn-save" onclick="saveExpense()">${editingId ? 'Salva modifiche' : 'Salva spesa'}</button>
+  `;
+}
+function renderSheetDynamic(){
+  document.getElementById('catRow').innerHTML = CATS.map((c,i) => `
+    <div class="cat-chip ${i===form.catIndex?'active':''}" onclick="selectCategory(${i})"><span class="em">${c.emoji}</span><span>${c.label}</span></div>
+  `).join('');
+  document.getElementById('sharedToggle').checked = form.shared;
+
+  const sec = document.getElementById('sharedSection');
+  if (!form.shared){ sec.innerHTML=''; return; }
+
+  const amount = parseFloat((document.getElementById('inpAmount')?.value || '0').replace(',','.')) || 0;
+  const each = form.count ? amount / form.count : 0;
+
+  const rows = form.names.map((name, i) => {
+    const rightPart = form.splitType === 'equal'
+      ? `<span class="share-amt mono">${fmt(each)}</span>`
+      : `<input type="text" inputmode="decimal" class="custom-split-input" data-idx="${i}" placeholder="0,00" value="${escapeHtml(form.customAmounts[i]||'')}" oninput="updateRemaining()">`;
+    return `<div class="split-row">
+      <input class="text-input name-input" data-idx="${i}" type="text" placeholder="Persona ${i+1}" value="${escapeHtml(name)}">
+      ${rightPart}
+    </div>`;
+  }).join('');
+
+  sec.innerHTML = `
+    <div class="field-label">Con quante persone dividi</div>
+    <div class="stepper">
+      <button onclick="changeCount(-1)">−</button>
+      <span class="stepper-value mono">${form.count}</span>
+      <button onclick="changeCount(1)">+</button>
+    </div>
+    <div class="segmented">
+      <button class="${form.splitType==='equal'?'active':''}" onclick="setSplitType('equal')">Parti uguali</button>
+      <button class="${form.splitType==='custom'?'active':''}" onclick="setSplitType('custom')">Personalizzato</button>
+    </div>
+    <div class="field-label">Nomi (opzionale)</div>
+    <div class="split-preview">${rows}</div>
+    ${form.splitType==='custom' ? '<div class="remaining" id="remainingLabel"></div>' : ''}
+  `;
+  if (form.splitType==='custom') updateRemaining();
+}
+function selectCategory(i){ form.catIndex=i; renderSheetDynamic(); }
+function toggleShared(){ form.shared = document.getElementById('sharedToggle').checked; renderSheetDynamic(); }
+function syncNamesFromDOM(){
+  document.querySelectorAll('.name-input').forEach(inp => { form.names[parseInt(inp.dataset.idx,10)] = inp.value; });
+  document.querySelectorAll('.custom-split-input').forEach(inp => { form.customAmounts[parseInt(inp.dataset.idx,10)] = inp.value; });
+}
+function changeCount(delta){
+  syncNamesFromDOM();
+  const newCount = Math.max(1, (form.count||1) + delta);
+  form.count = newCount;
+  while (form.names.length < newCount) form.names.push('');
+  form.names = form.names.slice(0, newCount);
+  renderSheetDynamic();
+}
+function onAmountInput(){
+  if (!form || !form.shared) return;
+  if (form.splitType === 'equal') refreshShareAmounts();
+  else updateRemaining();
+}
+function refreshShareAmounts(){
+  const amount = parseFloat((document.getElementById('inpAmount').value||'0').replace(',','.')) || 0;
+  const each = form.count ? amount / form.count : 0;
+  document.querySelectorAll('.share-amt').forEach(el => el.textContent = fmt(each));
+}
+
+function setSplitType(t){ syncNamesFromDOM(); form.splitType = t; renderSheetDynamic(); }
+function updateRemaining(){
+  const amount = parseFloat((document.getElementById('inpAmount')?.value || '0').replace(',','.')) || 0;
+  const inputs = document.querySelectorAll('.custom-split-input');
+  let sum = 0;
+  inputs.forEach(inp => { sum += parseFloat((inp.value||'0').replace(',','.')) || 0; });
+  const remaining = Math.round((amount - sum)*100)/100;
+  const label = document.getElementById('remainingLabel');
+  if (!label) return;
+  if (Math.abs(remaining) < 0.01){
+    label.textContent = 'Le quote coprono il totale ✓';
+    label.className = 'remaining ok';
+  } else {
+    label.textContent = remaining > 0 ? `Mancano ${fmt(remaining)}` : `Superano di ${fmt(-remaining)}`;
+    label.className = 'remaining bad';
+  }
+}
+function splitEqual(total, names){
+  const n = names.length;
+  const base = Math.floor((total/n)*100)/100;
+  const result = names.map(name => ({name, amount: base}));
+  const assigned = base * n;
+  const remainder = Math.round((total - assigned)*100)/100;
+  result[result.length-1].amount = Math.round((result[result.length-1].amount + remainder)*100)/100;
+  return result;
+}
+function saveExpense(){
+  const amountRaw = (document.getElementById('inpAmount').value || '').replace(',', '.');
+  const amount = parseFloat(amountRaw);
+  if (!amount || amount <= 0){ toast('Inserisci un importo valido'); return; }
+  const description = document.getElementById('inpDesc').value.trim();
+  const category = CATS[form.catIndex];
+  const dateVal = document.getElementById('inpDate').value;
+  const dateIso = dateVal ? new Date(dateVal + 'T12:00:00').toISOString() : new Date().toISOString();
+
+  let participants = [];
+  if (form.shared){
+    syncNamesFromDOM();
+    const names = [];
+    for (let i=0; i<form.count; i++){
+      const raw = (form.names[i]||'').trim();
+      names.push(raw || `Persona ${i+1}`);
+    }
+    if (form.splitType === 'equal'){
+      participants = splitEqual(amount, names);
+    } else {
+      const inputs = document.querySelectorAll('.custom-split-input');
+      const map = {}; let sum = 0;
+      inputs.forEach(inp => { const idx = parseInt(inp.dataset.idx,10); const v = parseFloat((inp.value||'0').replace(',','.')) || 0; map[idx] = v; sum += v; });
+      if (Math.abs(sum - amount) > 0.01){ toast(`Le quote non tornano: ${sum>amount?'superano di '+fmt(sum-amount):'mancano '+fmt(amount-sum)}`); return; }
+      participants = names.map((name,i) => ({name, amount: Math.round((map[i]||0)*100)/100}));
+    }
+  }
+
+  if (editingId){
+    const idx = expenses.findIndex(x=>x.id===editingId);
+    if (idx !== -1){
+      expenses[idx] = { ...expenses[idx], amount: Math.round(amount*100)/100, description, category, date: dateIso, shared: form.shared, participants };
+      if (form.shared) riepSelected.add(editingId); else riepSelected.delete(editingId);
+    }
+  } else {
+    const newId = uid();
+    expenses.unshift({
+      id: newId,
+      amount: Math.round(amount*100)/100,
+      description, category,
+      date: dateIso,
+      shared: form.shared,
+      participants
+    });
+    if (form.shared) riepSelected.add(newId);
+  }
+  sortExpenses();
+  saveExpenses();
+  const wasEditing = !!editingId;
+  closeSheet();
+  render();
+  toast(wasEditing ? 'Modifiche salvate' : 'Spesa salvata');
+}
+
+/* ---------- RIEPILOGO TAB ---------- */
+function riepilogoHTML(){
+  const shared = expenses.filter(e=>e.shared);
+  if (shared.length===0){
+    return `<div class="empty-state"><div class="glyph">🧾</div><p>Nessuna spesa condivisa ancora.<br>Aggiungine una e attiva "Dividi in quote".</p></div>`;
+  }
+
+  const checklist = shared.map(e => `
+    <label class="riep-check-row">
+      <input type="checkbox" ${riepSelected.has(e.id)?'checked':''} onchange="toggleRiepSelect('${e.id}')">
+      <span class="rdesc">${e.category.emoji} ${escapeHtml(e.description || e.category.label)}</span>
+      <span class="ramt mono">${fmt(e.amount)}</span>
+    </label>`).join('');
+
+  return `
+    <div class="section-title">Spese condivise</div>
+    <div class="riep-tools">
+      <button onclick="selectAllRiep(true)">Seleziona tutte</button>
+      <button onclick="selectAllRiep(false)">Deseleziona tutte</button>
+    </div>
+    ${checklist}
+
+    <div class="section-title">Messaggio da inviare</div>
+    <div class="receipt">
+      <textarea id="noteText" class="receipt-textarea" oninput="autoGrow(this)">${escapeHtml(buildNoteText())}</textarea>
+    </div>
+    <div class="receipt-actions">
+      <button id="btnCopy" onclick="copyNote()">📋 Copia riepilogo</button>
+    </div>
+  `;
+}
+function autoGrow(el){
+  el.style.height = 'auto';
+  el.style.height = el.scrollHeight + 'px';
+}
+function toggleRiepSelect(id){
+  if (riepSelected.has(id)) riepSelected.delete(id); else riepSelected.add(id);
+  render();
+}
+function selectAllRiep(all){
+  const shared = expenses.filter(e=>e.shared);
+  riepSelected = new Set(all ? shared.map(e=>e.id) : []);
+  render();
+}
+function buildNoteText(){
+  const shared = expenses.filter(e=>e.shared && riepSelected.has(e.id));
+  const totals = {};
+  shared.forEach(e => e.participants.forEach(p => { totals[p.name] = (totals[p.name]||0) + p.amount; }));
+  const grandTotal = shared.reduce((s,e)=>s+e.amount,0);
+  const dateStr = capitalize(new Date().toLocaleDateString('it-IT',{day:'numeric', month:'long'}));
+
+  let lines = [];
+  lines.push(`🧾 *Riepilogo spese* — ${dateStr}`);
+  lines.push('');
+  shared.forEach(e => lines.push(`${e.category.emoji} ${e.description || e.category.label} → *${fmt(e.amount)}*`));
+  lines.push('');
+  lines.push(`💰 *Totale: ${fmt(grandTotal)}*`);
+  lines.push('');
+  lines.push('👥 *Quanto tocca a testa*');
+  Object.entries(totals).forEach(([name, tot]) => lines.push(`${name} → *${fmt(tot)}*`));
+  lines.push('');
+  lines.push('Grazie mille, siete il top! 🙌💸');
+  return lines.join('\n');
+}
+function copyNote(){
+  const ta = document.getElementById('noteText');
+  const text = ta ? ta.value : buildNoteText();
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(()=>toast('Copiato negli appunti')).catch(()=>fallbackCopy(text));
+  } else fallbackCopy(text);
+}
+function fallbackCopy(text){
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); toast('Copiato negli appunti'); }
+  catch(e){ toast('Impossibile copiare automaticamente'); }
+  document.body.removeChild(ta);
+}
+
+/* ---------- init ---------- */
+loadExpenses();
+expenses.filter(e=>e.shared).forEach(e=>riepSelected.add(e.id));
+render();
+</script>
+</body>
+</html>
