@@ -195,7 +195,10 @@
   }
   .clear-all-btn.confirm{background:var(--coral); border-color:var(--coral); color:#2A0F0B; font-weight:700; font-size:11px; width:auto; padding:0 14px;}
 
-  input[type="date"]{ color-scheme: dark; width:100%; max-width:100%; min-width:0; display:block; }
+  input[type="date"]{
+    color-scheme: dark; width:100%; max-width:100%; min-width:0; display:block;
+    box-sizing:border-box; margin:0; -webkit-appearance:none; appearance:none;
+  }
 
   .btn-save{
     width:100%; background:var(--accent); color:#1A1300; border:none; border-radius:14px;
